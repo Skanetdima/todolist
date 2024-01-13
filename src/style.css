@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */

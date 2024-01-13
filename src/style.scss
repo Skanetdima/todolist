@@ -1,0 +1,19 @@
+// Default colors and styles
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap');
+
+$d_color: gray;
+$d_display: flex;
+$d_fontFamily: 'Indie Flower', cursive; 
+$d_FontSize: 32px;
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: $d_color;
+  display: $d_display;
+  justify-content: center;
+  align-items: center;
+  font-family: $d_fontFamily;
+  font-size: $d_FontSize;
+}
