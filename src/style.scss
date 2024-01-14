@@ -2,18 +2,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&display=swap');
 
 $d_color: gray;
+$blue: #000050;
+$orange: #c00000;
+$d_align: center;
 $d_display: flex;
 $d_fontFamily: 'Indie Flower', cursive; 
 $d_FontSize: 32px;
+
 *{
+  font-family: $d_fontFamily;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 body{
   background-color: $d_color;
   display: $d_display;
-  justify-content: center;
-  align-items: center;
+  justify-content: $d_align;
+  align-items: $d_align;
   font-family: $d_fontFamily;
   font-size: $d_FontSize;
+}
+
+.App{
+  text-align: center;
+}
+
+h1{
+  color: #fff;
+  margin-bottom: 0.4rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper{
+  background: $blue;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input{
+  outline: none;
+  background: none;
+  border: 1px solid $orange;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+.todo-input::placeholder{
+  color: #ffffff4d;
+}
+.todo-btn {
+  background: $orange;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+            
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $orange;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+                  
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+    
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+      
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+  cursor: pointer;
+        
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+    
 }

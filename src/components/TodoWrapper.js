@@ -13,8 +13,11 @@ export const TodoWrapper = () => {
     }
     return(
         <div className='TodoWrapper'>
+            <h1>Complete your exercise!</h1>
             <TodoForm addTodo={addTodo}/>
-            <Todo />
+            {todos.map((todo, index) => (
+                <Todo task={todo} key={index} />
+            ))}
         </div>
     );
 }
